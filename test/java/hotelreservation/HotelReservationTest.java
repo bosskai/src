@@ -1,4 +1,4 @@
-package test.hotelreservation;
+package test.java.hotelreservation;
 
 /**
  * Created by bosskai on 2014/11/13.

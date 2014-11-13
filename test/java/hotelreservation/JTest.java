@@ -1,4 +1,4 @@
-package test.hotelreservation;
+package test.java.hotelreservation;
 
 import main.java.hotelreservation.Hotel;
 
