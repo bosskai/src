@@ -10,12 +10,12 @@ import java.util.List;
  */
 public class HotelReservation {
     public String bestChoice(List<Hotel> hotelList, String date, final int customerType) throws Exception {
-        List<Date> listDate = parseDate(date);
+        List<String> listDate = parseDate(date);
 
         Collections.sort(hotelList,new Comparator(){
 //            @Override
             public int compare(Hotel o1, Hotel o2) throws Exception {
-                int i = o1.calculatePrice(date, customerType).compareTo(o2.calculatePrice(date, customerType));
+                int i = o1.calculatePrice(listDate, customerType).compareTo(o2.calculatePrice(listDate, customerType));
 //                arg0.getRating().compareTo(arg0.getRating());
                 return 0;
             }
@@ -24,8 +24,8 @@ public class HotelReservation {
           return "";
     }
 
-    private List<Date> parseDate(String date) {
-        List<Date> listDate = new ArrayList<Date>();
+    private List<String> parseDate(String date) {
+        List<String> listDate = new ArrayList<String>();
         return listDate;
     }
 
